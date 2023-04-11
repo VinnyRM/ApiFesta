@@ -1,0 +1,90 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "alguma descrição",
+    "price": 1400,
+    "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/64343f889d9d42562c535352
+
+###
+DELETE  http://localhost:3000/api/services/64343f889d9d42562c535352
+
+###
+PUT http://localhost:3000/api/services/64343f8e9d9d42562c535354
+Content-Type: application/json
+
+{
+    "name": "Algum serviço atualizado",
+    "description": "alguma descrição",
+    "price": 2000,
+    "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "meu Evento 2",
+    "author": "Vinicius",
+    "description": "Uma festa de aromba",
+    "budget": 10000,
+    "image": "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-after/Landscape-BW.jpg",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "alguma descrição",
+            "price": 3000,
+            "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "alguma descrição",
+            "price": 5200,
+            "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/64344a73615d65178fc8ee8a
+
+###
+DELETE  http://localhost:3000/api/parties/64344a73615d65178fc8ee8a
+
+###
+PUT http://localhost:3000/api/parties/64344b16615d65178fc8ee8c
+Content-Type: application/json
+
+{
+    "title": "meu Evento 2",
+    "author": "Vinicius",
+    "description": "Uma festa de aromba",
+    "budget": 15000,
+    "image": "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-after/Landscape-BW.jpg",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "alguma descrição",
+            "price": 2200,
+            "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "alguma descrição",
+            "price": 7300,
+            "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+        }
+    ]
+}
